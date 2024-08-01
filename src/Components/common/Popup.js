@@ -23,16 +23,19 @@ const Popup = ({ onClose }) => {
       <img src={medicalbag} alt="Popup" className="medicalbag-img" />
         <form onSubmit={handleSubmit}>
             <h5>Quick Login/Register </h5>
-          <label>
+      <div className='form-container'>
+      <label>
             Mobile Number:
             <input
               type="text"
+              placeholder='Enter mobile number'
               value={mobileNumber}
               onChange={(e) => setMobileNumber(e.target.value)}
               required
             />
           </label>
-          <button type="submit">Submit</button>
+          <button type="submit">Submit to get OTP</button>
+      </div>
         </form>
       </div>
     </div>
