@@ -1,6 +1,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x:hidden;
 }
 
 .header {
@@ -241,7 +243,6 @@ body {
     justify-content: center;
     width: 1200px;
     text-align: center;
-    margin-top: 50px;
     margin-right: 60px;
     grid-template-rows: repeat(2, 0.2fr);
     grid-template-columns: repeat(5, 0.1fr);
@@ -251,7 +252,6 @@ body {
     height: 150px; 
     margin-top: 40px;
     border-radius: 15px;
-    /* border: 1px solid #EAEAEA; */
 }
 
 .category-item{
@@ -259,7 +259,6 @@ body {
     justify-content: center;
     width: 205px;
     height: 246px;
-    /* border: 1px solid #EAEAEA; */
 }
 
 .categ-name{
@@ -296,7 +295,7 @@ body {
 .shop-concern {
     position: relative;
     text-align: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   .concern-container{
     display: flex;
@@ -317,6 +316,7 @@ body {
     font-size: 24px;
     line-height: 36px;
     color: #1A1A1A;
+    /* margin-bottom: -0%; */
   }
   
   .concern-name{
@@ -341,7 +341,6 @@ body {
     width: 154px; 
     height: 154px; 
     margin: 0 12px; 
-    margin-top: 20px;
   }
   
   .concern-left-arrow, .concern-right-arrow {
@@ -369,12 +368,14 @@ body {
     font-size: 24px;
     line-height: 36px;
     color: #1A1A1A;
+    text-align: center;
 }
 
 .shop-brand {
     position: relative;
     text-align: center;
     margin-top: 40px;
+    
 }
 
 .brand-img {
@@ -390,10 +391,22 @@ body {
     opacity: 0;
     transform: translate(100%);
 }
+.brand-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+    opacity: 1;
+}
+
 .brand-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
     opacity: 1;
-    transition: opacity 0.5s ease,transform 0.5s ease;
 }
 .brand-item {
     display: flex;
@@ -421,7 +434,7 @@ body {
 }
 .brand-item img {
     width: 154px; 
-    height: 90px; 
+    height: 154px; 
     margin: 0 12px; 
     left: 694px;
     margin-top: 40px;
@@ -431,11 +444,11 @@ body {
     margin-top: 30px; 
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     color: #000000;
     height: 11px;
-    width: 162px;
+    /* width: 162px; */
 }
 
 .brand-button {
@@ -519,7 +532,7 @@ body {
 
 .product-price {
     margin-top: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
     color: #1A1A1A;
