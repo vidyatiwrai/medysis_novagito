@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../Styles/Components/Homepage.css";
 import babybanner from "../images/babybanner.png";
 import featuredImage from "../images/Featured.png";
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     const [carouselIndex, setCarouselIndex] = useState(0);
@@ -285,6 +286,11 @@ const HomePage = () => {
                             <path d="M2 2L11.7574 11.7574C14.1005 14.1005 14.1005 17.8995 11.7574 20.2426L2 30" stroke="#7B7B7B" strokeWidth="3"/>
                         </svg>
                     </div>
+                </div>
+                <div className="brand-button">
+                 <Link to='/shopbrand'>
+                 <button>View All</button>
+                 </Link>
                 </div>
             </div>
 
