@@ -1,0 +1,88 @@
+.popup {
+    position:absolute;
+    top: 30%;
+    left: 28%;
+    width: 608px;
+    height: 697px;
+    border-radius:20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+ .top-green-section{
+    width: 608px;
+    height: 140px;
+    background-color: #162c2a;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .top-logo{
+    height: 72px;
+    width: 192px;
+ }
+ .popup-inner img{
+    align-items: center;
+    width: 241px;
+    height: 219px;
+    margin-left: 172px;
+ }
+ .popup-inner h5{
+    font-family: 'Poppins';
+    font-weight: 700px;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 182px;
+ }
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container{
+    width: 464px;
+    height: 172px;
+    border-radius: 10px;
+    margin-left: 72px;
+  }
+  .popup label {
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500px;
+    line-height: 30px;
+  }
+  
+  .popup input {
+    border: 1px solid #ccc;
+    width: 464px;
+    height: 56px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400px;
+    color: #9a9a9a;
+    left: 96px;
+    text-align:justify;
+  }
+  
+  .popup button {
+    background-color: #162c2a;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    width: 464px;
+    cursor: pointer;
+    height: 54px;
+    margin-top: 20px;
+    
+  }
+  
+.otpvalid{
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 400px;
+    line-height: 24px;
+    color: #162c2a;
+}
+  
