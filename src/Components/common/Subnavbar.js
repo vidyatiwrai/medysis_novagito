@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../../Styles/Components/Subnavbar.css"; 
 
 const SubNavbar = () => {
   return (
     <div className="sub-navbar">
       <div className="sub-navbar-links">
-        <a href="/home" className="sub-navbar-item">Home</a>
-        <a href="/about" className="sub-navbar-item">About</a>
-        <a href="/dental" className="sub-navbar-item">Dental</a>
-        <a href="/featured" className="sub-navbar-item">Featured</a>
-        <a href="/offers" className="sub-navbar-item">Offers</a>
+        <Link to="/home" className="sub-navbar-item">Home</Link>
+        <Link to="/about" className="sub-navbar-item">About</Link>
+        <Link to="/dental" className="sub-navbar-item">Dental</Link>
+        <Link to="/featured" className="sub-navbar-item">Featured</Link>
+        <Link to="/offers" className="sub-navbar-item">Offers</Link>
       </div>
       <div className="quick-order-button">
         <button>Quick Order</button>
