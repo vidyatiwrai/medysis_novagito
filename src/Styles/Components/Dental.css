@@ -14,9 +14,9 @@ body {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 0.1fr); 
-    gap: 20px; 
+    gap:60px; 
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 6%;
 }
 
 .image-item {
@@ -24,7 +24,6 @@ body {
     flex-direction: column;
     width: 232px;
     height: 352px;
-    border: 2px solid #cf0b0b; 
     align-items: center;
 }
 
@@ -52,7 +51,7 @@ body {
     font-size: 16px;
     color: #1a1a1a;
     font-family: 'Inter';
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .add-to-cart {
@@ -79,7 +78,7 @@ body {
     font-family: 'Poppins';
     margin-left: 160px;
     color: #1a1a1a;
-    font-weight: 600px;
+    font-weight:600;
     margin-top: 150px;
     line-height: 30px;
 }
@@ -88,6 +87,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 
@@ -97,10 +97,12 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
+    
 }
 
 .breadcrumb li {
     margin-right: 5px;
+    
 }
 
 .breadcrumb a {
@@ -114,10 +116,11 @@ body {
 
 .filter-options {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    margin-right: 11%;
+    margin-right: 13%;
+    color: #1A1A1A;
 }
 
 .filter-item {
@@ -143,9 +146,15 @@ body {
     color: #1a1a1a;
 }
 
-.filter-options {
-    display: flex;
-    gap: 20px;
+
+.filter-options button{
+    height: 27px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #162c2a;
 }
 
 
@@ -156,24 +165,126 @@ body {
 }
 
 .sidebar {
-    width: 200px; 
-    padding: 10px;
-}
-
-.sidebar h3 {
-    margin-top: 0;
-}
-
-.sidebar ul {
-    list-style: none;
+    width: 286px;
+    height: 316px;
+    margin-left: 5%;
+    margin-top: 58px;
 
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+.dropdown-container {
+    position: relative;
+    margin-left: 31%;
+    margin-bottom: 25px;
 }
 
-.sidebar ul li a {
-    text-decoration: none;
-    color: #000;
+.dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff; 
+    border-radius: 4px; 
+    padding: 8px 16px 8px 36px; 
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    color: #1a1a1a;
+    font-family: 'Poppins';
+    outline: none; 
+    font-weight: 400;
+    border: none;
+    line-height: 24px;
+}
+
+.dropdown::-ms-expand {
+    display: none;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%) rotate(0deg);
+    font-size: 16px;
+    color: #555;
+    pointer-events: none; 
+    transition: transform 0.3s ease;
+    z-index: 1; 
+}
+
+.dropdown:focus + .dropdown-arrow,
+.dropdown:active + .dropdown-arrow {
+    transform: translateY(-50%) rotate(90deg); /* Adjust rotation as needed */
+}
+
+
+.brand-content{
+display: flex;
+gap: 20px;
+}
+.brand-content h3{
+    margin-right: 80px;
+    color: #1A1A1A;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 24px;
+}
+.brand-content p{
+    margin-right: 60px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A1A1A;
+}
+
+.brand-search-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.search-icon {
+    position: absolute;
+    top: 40%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    right: 25px;
+}
+.search-input {
+    padding: 8px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    width: 255px;
+    background-color: hsl(0, 17%, 94%);
+    height: 27px; 
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-right: 50px;
+}
+.checkbox-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.checkbox-box input[type="checkbox"] {
+    margin-right: 8px; 
+}
+
+.checkbox-box label {
+    font-size: 16px;
+    margin: 0;
+}
+#sample-checkbox{
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    background-color: #162c2a;
 }
